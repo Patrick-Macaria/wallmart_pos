@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<!-- 2023-01-26T17:24:51 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="wallmartusers" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="30c92203-0e6a-4628-9de5-3dbc89a90a2f">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString language="SQL">
+		<![CDATA[select * from users]]>
+	</queryString>
+	<field name="empId" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="empId"/>
+		<property name="com.jaspersoft.studio.field.label" value="empId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="users"/>
+	</field>
+	<field name="firstName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="firstName"/>
+		<property name="com.jaspersoft.studio.field.label" value="firstName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="users"/>
+	</field>
+	<field name="lastName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="lastName"/>
+		<property name="com.jaspersoft.studio.field.label" value="lastName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="users"/>
+	</field>
+	<field name="phoneNumber" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="phoneNumber"/>
+		<property name="com.jaspersoft.studio.field.label" value="phoneNumber"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="users"/>
+	</field>
+	<field name="empPhoto" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="empPhoto"/>
+		<property name="com.jaspersoft.studio.field.label" value="empPhoto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="users"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="0" width="400" height="50" forecolor="#011CFF" uuid="fe284abb-bf00-4d2d-8799-6accbf7752ec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Agency FB" size="26"/>
+				</textElement>
+				<text><![CDATA[Wallmart point of sale users]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="70" height="30" uuid="de617508-2698-46d5-8783-be4fb91c6697"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="16"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="0" width="100" height="30" uuid="7f349742-40a7-4ad3-ba52-03e0120ca712"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="16"/>
+				</textElement>
+				<text><![CDATA[First Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="0" width="100" height="30" uuid="2e854b9f-ff89-4d76-a763-96e750295cbf"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="16"/>
+				</textElement>
+				<text><![CDATA[Last Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="0" width="190" height="30" uuid="719cddb2-8cd9-44c2-b5f7-d70e9f7546fd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="16"/>
+				</textElement>
+				<text><![CDATA[Face ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="0" width="100" height="30" uuid="8de2092c-9ddf-4169-9871-d263a94c2ad3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="16"/>
+				</textElement>
+				<text><![CDATA[Phone number]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="70" height="30" uuid="a56c3484-dff5-43d3-a5ba-24111696acdc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b0fe48d8-f8ab-4313-a515-1145dbd38ce1"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Century Gothic" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{empId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="0" width="100" height="30" uuid="a4c28a23-517e-4233-aeb2-41b68dd92cff">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="512d5f44-9cfe-4da6-bf1f-b54ef8b60425"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Century Gothic" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firstName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="0" width="100" height="30" uuid="12090b83-0ff9-47e2-88a0-533d8fff48a7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f0d73e3d-7178-4383-b492-723457789f51"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Century Gothic" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lastName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="0" width="190" height="30" uuid="e9a586ef-3927-4b42-9360-fab28aba26a8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="30431bf8-9551-4828-9312-babf54622da8"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Century Gothic" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{empPhoto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="0" width="100" height="30" uuid="1e0ddfae-724a-418d-ab2d-f32ca499f564"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Century Gothic" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{empPhoto}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="300" height="30" uuid="f42acfec-8316-406d-9fb5-309cf1df2933"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Wallmart point of sale program users list as of:]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="300" y="0" width="140" height="30" uuid="c116662d-3fcc-4561-a60a-352c191146a6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="440" y="0" width="100" height="30" uuid="5b196184-9771-490a-8834-0ea9a9bc490e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="32" splitType="Stretch">
+			<textField>
+				<reportElement x="180" y="0" width="200" height="30" uuid="cc814a4d-5e40-48ed-a6ce-4d5d6004f30e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="380" y="1" width="160" height="30" uuid="670ee24f-050f-40c1-9af2-de2e4a9aee3f"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font size="12" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Wallmart Inc.]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="32" splitType="Stretch"/>
+	</summary>
+</jasperReport>

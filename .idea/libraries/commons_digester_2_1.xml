@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="commons-digester-2.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/commons-digester-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang3-3.12.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/flatlaf-2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/itextpdf-5.5.13.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jasperreports-6.20.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-8.0.25.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
